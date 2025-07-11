@@ -1,0 +1,21 @@
+# powershell commands 
+| Command                   | Description                            | Example                                         |
+| ------------------------- | -------------------------------------- | ----------------------------------------------- |
+| `Get-Process`             | List running processes                 | `Get-Process`                                   |
+| `Get-Service`             | List system services                   | `Get-Service`                                   |
+| `Get-LocalUser`           | List local users (admin rights needed) | `Get-LocalUser`                                 |
+| `Get-LocalGroup`          | Show local groups                      | `Get-LocalGroup`                                |
+| `Get-LocalGroupMember`    | Show users in a group                  | `Get-LocalGroupMember Administrators`           |
+| `Get-ChildItem`           | List directory contents (like `ls`)    | `Get-ChildItem -Force`                          |
+| `Set-Location`            | Change directory (like `cd`)           | `Set-Location C:\Windows`                       |
+| `Get-Content`             | View file content (like `cat`)         | `Get-Content .\file.txt`                        |
+| `Copy-Item` / `Move-Item` | Copy/move files                        | `Copy-Item file.txt D:\`                        |
+| `Remove-Item`             | Delete files or folders                | `Remove-Item -Path .\file.txt`                  |
+| `New-Item`                | Create new files or folders            | `New-Item -Path . -Name new.txt -ItemType File` |
+| `Test-Connection`         | Ping a host                            | `Test-Connection google.com`                    |
+| `Get-NetIPAddress`        | Show IP info                           | `Get-NetIPAddress`                              |
+| `Get-WmiObject`           | Deep system info                       | `Get-WmiObject win32_operatingsystem`           |
+| `Get-Command`             | List available commands                | `Get-Command`                                   |
+| `Get-Alias`               | List aliases (shortcuts)               | `Get-Alias`                                     |
+| `Invoke-WebRequest`       | Download files / connect to web        | `Invoke-WebRequest http://example.com`          |
+| `Start-Process`           | Start a new process                    | `Start-Process notepad.exe`                     |
